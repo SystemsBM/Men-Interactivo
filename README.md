@@ -7,7 +7,7 @@
 
 ## Cómo Usar
 1. Descarga o clona este repositorio:
-git clone [https://github.com/tu_usuario/menu-interactivo.git](https://github.com/SystemsBM/Men-Interactivo.git)
+git clone https://github.com/SystemsBM/Men-Interactivo.git
 2. Abre el archivo 'index.html' en tu navegador para ver el menú en acción.
    
 ## Captura del Proyecto
