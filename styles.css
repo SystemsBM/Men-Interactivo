@@ -1,0 +1,90 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f4f8;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #7e5bef);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+    transition: transform 0.3s ease;
+}
+
+.menu:hover {
+    transform: translateY(-5px);
+}
+
+.menu-item {
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.menu-item i {
+    font-size: 32px;
+    transition: all 0.3s ease;
+}
+
+.menu-item:hover i {
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.3));
+}
+
+.tooltip {
+    position: absolute;
+    top: -45px;
+    left: 50%;
+    transform: translateX(-50%) scale(0);
+    background-color: #333;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    opacity: 0;
+    white-space: nowrap;
+}
+
+.menu-item:hover .tooltip {
+    transform: translateX(-50%) scale(1);
+    opacity: 1;
+}
+
+.menu-item:hover {
+    color: #4ecdc4;
+}
+
+.menu-item:nth-child(2):hover {
+    color: #ff6b6b;
+}
+
+.menu-item:nth-child(3):hover {
+    color: #45b7d1;
+}
+
+.menu-item:nth-child(4):hover {
+    color: #7e5bef;
+}
